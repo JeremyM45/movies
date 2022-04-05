@@ -26,3 +26,9 @@ function Ticket(movieName, time) {
   this.time = time
   this.price = 10
 }
+Ticket.prototype.priceFormula = function(priceMod, age)  {
+  if (age > 54) {
+    this.price = (this.price * priceMod) * 0.8
+    return this.price
+  }
+}

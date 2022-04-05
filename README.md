@@ -32,6 +32,12 @@ code: movieList = new MovieList()
 result: movieName (name, times, priceMod, 1) -->
 
 describe Ticket()
-test: "It should display correct ticket information in console"
+<!-- test: "It should display correct ticket information in console"
 code: newTicket = new Ticket(movieName, times)
-result: newTicket (movie name, times, price)
+result: newTicket (movie name, times, price) -->
+
+describe Ticket.protype.priceFormula
+test: :it should return an updated price based on price mod and age
+code: newTicket = new Ticket(movieName, times)
+      newTicket.priceFormula(1, 55)
+expeted output: 8
