@@ -15,4 +15,8 @@ MovieList.prototype.addId  = function()  {
   this.id += 1;
   return this.id;
 };
-
+MovieList.prototype.movieGetter = function(id)  {
+  if  (this.movies[id] !== undefined) {
+    return this.movies[id]
+  }
+}

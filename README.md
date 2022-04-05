@@ -22,9 +22,11 @@ code: movieList = new MovieList()
       movieList.addMovie(movieName)
 result: movieList(movieName.....) -->
 
-describe Movie.prototyle.movieGetter()
-test: "It should return the movie object that name matches passed id"
+describe MovieList.prototyle.movieGetter()
+<!-- test: "It should return the movie object that name matches passed id"
 code: movieList = new MovieList()
       movieName = new Movie(name, times, priceMod)
-      movieList.addId(movieName)
-      movieList.movieGetter()
+      movieName2 = new Movie(name2, times2, priceMod2)
+      movieList.addMovie(movieName)
+      movieList.movieGetter(1)
+result: movieName (name, times, priceMod, 1) -->
