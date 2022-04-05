@@ -1,7 +1,7 @@
 <!-- create movie constructor (times, name, price mod) -->
-movie getter(id)
+<!-- movie getter(id) -->
 gather user input (age)
-diplay movie details with mod price
+<!-- diplay movie details with mod price -->
 
 describe Movie()
 
@@ -37,7 +37,14 @@ code: newTicket = new Ticket(movieName, times)
 result: newTicket (movie name, times, price) -->
 
 describe Ticket.protype.priceFormula
-test: :it should return an updated price based on price mod and age
+<!-- test: :it should return an updated price based on price mod age if age is over 54
 code: newTicket = new Ticket(movieName, times)
       newTicket.priceFormula(1, 55)
-expeted output: 8
+expeted output: 8 -->
+
+<!-- test: "it should return an updated price based on price mod age if age is under 54
+code: newTicket = new Ticket(movieName, times)
+      newTicket.priceFormula(1, 50)
+expeted output: 10 -->
+
+
