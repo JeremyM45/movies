@@ -7,7 +7,7 @@ function MovieList()  {
   this.movies = {}
   this.id = 0
 }
-MovieList.prototype.addPlace = function(movie) {
+MovieList.prototype.addMovie = function(movie) {
   movie.id = this.addId();
   this.movies[movie.id] = movie;
 };
