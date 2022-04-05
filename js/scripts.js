@@ -20,3 +20,9 @@ MovieList.prototype.movieGetter = function(id)  {
     return this.movies[id]
   }
 }
+
+function Ticket(movieName, time) {
+  this.movieName = movieName
+  this.time = time
+  this.price = 10
+}

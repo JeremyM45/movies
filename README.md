@@ -30,3 +30,8 @@ code: movieList = new MovieList()
       movieList.addMovie(movieName)
       movieList.movieGetter(1)
 result: movieName (name, times, priceMod, 1) -->
+
+describe Ticket()
+test: "It should display correct ticket information in console"
+code: newTicket = new Ticket(movieName, times)
+result: newTicket (movie name, times, price)
