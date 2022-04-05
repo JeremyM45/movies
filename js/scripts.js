@@ -24,12 +24,11 @@ function Ticket(movieName, time) {
 Ticket.prototype.priceFormula = function(priceMod, age)  {
   if (age > 54) {
     this.price = (this.price * priceMod) * 0.8
-    this.price = this.price * 100
-    this.price = Math.round(this.price)
-    this.price = this.price / 100
+    this.price = this.price.toFixed(2);
     return this.price
   } else {
     this.price = this.price * priceMod
+    this.price = this.price.toFixed(2);
     return this.price
   }
 };
@@ -45,16 +44,17 @@ function addTimesToList(movie)  {
     $("select#times-list").append("<option>" + key + "</option")
   })  
 }
+
+
 let movieList = new MovieList();
 const movie1 = new Movie("SONIC THE HEDGEHOG 2", ["7:30pm","8:30pm","9:30pm", "10:30pm"], 1)
 const movie2 = new Movie("SPIDER-MAN: NO WAY HOME", ["5:30pm", "6:30pm", "7:30pm"], 0.9)
-const movie3 = new Movie("The Case For Heaven", ["9:00am", "11:00am"], 0.85)
-const movie4 = new Movie("Top Gun: Maverick", ["8:00pm", "9:00pm", "10:45pm"], 1)
+const movie3 = new Movie("UNCHARTED", ["9:00am", "11:00am"], 0.85)
+const movie4 = new Movie("TOP GUN: MAVERICK", ["8:00pm", "9:00pm", "10:45pm"], 1)
 movieList.addMovie(movie1)
 movieList.addMovie(movie2)
 movieList.addMovie(movie3)
 movieList.addMovie(movie4)
-
 
 $(document).ready(function()  {
   addMoviesToList();
@@ -68,17 +68,9 @@ $(document).ready(function()  {
     const movie = $("select#movie-list").val();
     const time = $("select#times-list").val();
     let ticket = new Ticket(movie, time)
-    ticket.priceFormula(movieList.movieGetter(movie).priceMod, age);
+    let price = ticket.priceFormula(movieList.movieGetter(movie).priceMod, age);
     $("#title").text(ticket.movieName)
     $("#time").text(ticket.time)
-    $("#cost").text("$" + ticket.price)
+    $("#cost").text("$" + price)
   });
 });
-
-
-/*
-  Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
-    const contact = addressBookToDisplay.findContact(key);
-    htmlForContactInfo += "<li id=" + contact.id + ">" + contact.firstName + " " + contact.lastName + "</li>";
-  });
-*/
