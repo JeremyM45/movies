@@ -74,7 +74,7 @@ $(document).ready(function()  {
     $("#title").text(ticket.movieName)
     $("#picture").html(movieList.movieGetter(movie).img)
     $("#description").text(movieList.movieGetter(movie).description)
-    $("#time").text("Time: " + ticket.time)
-    $("#cost").text("Price: $" + price)
+    $("#time").html("Time: <b>" + ticket.time + "</b>")
+    $("#cost").html("Price: <b>$" + price + "</b>")
   });
 });

@@ -1,43 +1,42 @@
-describe Movie()
+# _Movies_
 
-test: "it should display correct movie details in console log"
-code: movieName = new Movie(name, times, priceMod)
-result: name, times, priceMod
+#### By _**Jeremy Martin & William Rodriguez**_
 
-decribe MovieList.prototype.addId()
-test: It should assign an id to a movie object
-code: movieName = new Movie(name, times, priceMod)
-      movieName.addId()
-result: name, times, priceMod, 1
+#### _A webpage that will display selected movie info with ticket price_
 
-descibe MovieList.protoype.addMovie()
-test: "it should add a movie object to the MovieList movies"
-code: movieList = new MovieList()
-      movieName = new Movie(name, times, priceMod)
-      movieList.addMovie(movieName)
-result: movieList(movieName.....)
+## Technologies Used
 
-describe MovieList.prototyle.movieGetter()
-test: "It should return the movie object that name matches passed id"
-code: movieList = new MovieList()
-      movieName = new Movie(name, times, priceMod)
-      movieName2 = new Movie(name2, times2, priceMod2)
-      movieList.addMovie(movieName)
-      movieList.movieGetter(1)
-result: movieName (name, times, priceMod, 1)
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* JQuery
 
-describe Ticket()
-test: "It should display correct ticket information in console"
-code: newTicket = new Ticket(movieName, times)
-result: newTicket (movie name, times, price)
+## Description
+This webpage has an input field for your age and two drop down menus that contain the movies and their show time options. After selecting a movie and show time, information about the movie and how much it will cost you for a ticket will be populated on the right side.
 
-describe Ticket.protype.priceFormula
-test: :it should return an updated price based on price mod age if age is over 54
-code: newTicket = new Ticket(movieName, times)
-      newTicket.priceFormula(1, 55)
-expeted output: 8
+## Setup/Installation Requirements
 
-test: "it should return an updated price based on price mod age if age is under 54
-code: newTicket = new Ticket(movieName, times)
-      newTicket.priceFormula(1, 50)
-expeted output: 10
+* Clone repo from GitHub using this link (https://github.com/JeremyM45/movies)
+
+* Navigate to the movies folder
+(Users/Username/Desktop/movies)
+
+* Open index.html file in your browser
+(Users/Username/Desktop/movies/index.html)
+
+* Enter your age in the input field.
+
+* Select desired movie and time from the dropdown menus
+
+* Click submit and the information will populate on the right
+
+## Known Bugs
+*  _No known bugs_
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) _04/05/2022_  _Jeremy Martin & William Rodriguez_
+
+ 

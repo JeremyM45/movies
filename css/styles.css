@@ -3,18 +3,18 @@ body  {
 }
 .page-header  {
   text-align: center;
-  background-color: rgb(137, 128, 236);
-  border: 4px solid rgb(155, 43, 43);
-  color: rgb(137, 128, 236);
+  background-color: rgb(52, 33, 255);
+  border: 4px solid rgb(246, 2, 2);
+  color: rgb(52, 33, 255);
   text-shadow: 5px 5px 8px #000000;
   margin-bottom: 2%; 
   font-family: Segoe Print;
 }
 .page-header h1 {
-  -webkit-text-stroke: 2px rgb(155, 43, 43);
+  -webkit-text-stroke: 1px rgb(246, 2, 2);
 }
 .page-header b {
-  -webkit-text-stroke: 1px rgb(155, 43, 43);
+  -webkit-text-stroke: 0.5px rgb(246, 2, 2);
 }
 .col-lg-6 {
   padding-bottom: 1%;
@@ -23,6 +23,7 @@ body  {
 #age {
   position: relative;
   left: 20%;
+  margin-bottom: 3%;
 }
 #age-label {
   position: relative;
@@ -32,6 +33,7 @@ body  {
   border: 1px solid black;
   position: relative;
   left: 45%;
+  margin-top: 2%;
 }
 .btn:hover  {
   background-color: rgb(255, 255, 255);
